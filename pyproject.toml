@@ -1,0 +1,15 @@
+[project]
+name = "ytlang"
+version = "0.1.1"
+requires-python = ">=3.14"
+dependencies = []
+
+[dependency-groups]
+dev = ["nox>=2025.11.12","nox-uv>=0.7.0"]
+test = ["pytest>=9.0.2"]
+lint = ["ruff>=0.14.14"]
+typing = ["ty>=0.0.14"]
+
+[tool.pytest.ini_options]
+pythonpath = "."
+testpath = "src"
